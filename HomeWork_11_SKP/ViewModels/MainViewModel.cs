@@ -101,7 +101,8 @@ namespace HomeWork_11_SKP
         {
             for(int i = 0; i < clientManager.Clients.Count; i++)
             {
-                Clients.Add(clientManager.Clients[i]);
+                var client = new ClientViewModel(clientManager.Clients[i]);
+                Clients.Add(client);
             }
         }
 
